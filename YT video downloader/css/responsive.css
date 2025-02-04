@@ -1,0 +1,406 @@
+
+@media(max-width:2300px){
+
+    header{
+        padding: 1rem 15rem;
+    }
+
+    .steps{
+        min-width: 50%;
+    } 
+
+    .steps .step_lists{
+        width: 50%;
+    }
+    
+    .steps .step_container{
+        max-width: 50%; 
+        width: 50%;
+    }
+
+    .about_section .about_container .image_container,
+    .about_section .about_container p{
+        width: 50% ;
+    }
+
+    footer{
+        padding: 1.2rem 25rem;
+    }
+
+}
+@media(max-width:1650px){
+
+    header{
+        padding: 1rem 6rem;
+    }
+    
+    .steps{
+        min-width: 60%;
+    } 
+
+    .steps .step_lists{
+        width: 60%;
+    }
+    
+    .steps .step_container{
+        max-width: 60%; 
+        width: 60%;
+    }
+
+    .about_section .about_container .image_container,
+    .about_section .about_container p{
+        width: 65% ;
+    }
+    
+    footer{
+        padding: 1.2rem 15rem;
+    }
+
+}
+
+@media(max-width:1550px){
+
+    header{
+        padding: 0.7rem 3rem;
+    }
+    
+    footer{
+        padding: 1.2rem 10rem;
+    }
+
+}
+@media(max-width:1300px){
+
+    header{
+        padding: 1rem 2rem;
+    }
+    
+    footer{
+        padding: 1.2rem;
+    } 
+
+    .home_section .home_container{
+        width: 60%;
+    }
+
+    .home_section .home_container form{
+        display: flex;
+        padding: 1.2rem;
+        margin: 2rem 0;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .about_section{
+        padding: 5rem 2rem;
+    }
+
+    .about_section .about_container .image_container,
+    .about_section .about_container p{
+        width: 65% ;
+    }
+
+
+}
+
+@media(max-width:1000px){
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    header .bi-list, header .bi-x{
+        display: flex;
+        font-size: 27px;
+        padding: 0 0;
+        cursor: pointer;
+    }
+
+    header .nav div{
+        display: flex;
+        margin: 0.5rem;
+    }
+    
+    nav{
+        display: none;
+        position: absolute;
+        top: 102%;
+        left: 130%;
+        padding: 10px 5px;
+        z-index: 5 !important;
+        width: 50%;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(0, 0, 0, 0.93);
+    }
+
+    nav a{
+        margin: 0.3rem !important;
+    }
+
+    .nav_active{
+        top: 102%;
+        transition: all 0.3s ease-in-out;
+        left: 70%;
+        display: flex;
+        border-radius: 20px 0px 0px 20px !important;
+    }
+
+    button{
+        font-size: 15px !important;
+    }
+
+    span{
+        color: var(--color-black-sec);
+    }
+
+    .home_section{
+        padding-top: 4rem !important;
+    }
+
+    .home_section .home_container{
+        width: 80%;
+    }
+    
+    .home_section .home_container h1{
+        margin-bottom: 3rem;
+        color: var(--color-white);
+        font-weight: 800;
+        width: 90%;
+        font-size: 30px;
+        margin: 1rem 0;
+        line-height: 2.9rem;
+        text-align: center;
+        
+        background: var(--color-white);
+        background-clip:text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .about_section .steps{
+        width: 80% !important;
+        
+    }
+
+    .about_section .steps .step_lists{
+        
+        min-width: 80% !important;
+        
+    }
+
+    .about_section{
+        padding: 5rem 2rem;
+    }
+
+    .about_section .about_container p{
+        width: 70%;
+    }
+    
+    .about_section .about_container .image_container{
+        width: 90%;
+    }
+    
+    .steps .step_container{
+        max-width: 80%; 
+        width: 80%;
+    }
+
+    .steps .step_container .image_step{
+        flex-flow: column;
+    }
+    
+    .steps .step_container .image_step img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .steps .step_lists{
+        width: 80%;
+    }
+
+    .credit p{
+        max-width: 80%;
+    }
+    
+    .credit h2{
+        max-width: 80%;
+    }
+    
+    .thanks_notice .thanks_holder{
+        max-width: 70%;
+    }
+
+}
+
+@media(max-width:758px){
+
+    h1{
+        font-size: 22px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 14px;
+    }
+
+    .nav_active{
+        left: 56%;
+    }
+
+    .home_section .home_container{
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .home_section .home_container form input{
+        padding: 0.8rem 0.9rem;
+        flex: 1;
+        font-size: 15px;
+        width:86%;
+    }
+    
+    .home_section .home_container form button{
+        padding: 0.8rem 0 ;
+        font-size: 15px;
+        width: 13%;
+    }
+
+    .home_section .home_container .result{
+        margin: 0 0;
+        padding: 0.1rem 0;
+        border-radius: 0%;
+    }
+    
+    .home_section .home_container .result div{
+        flex-flow: column;
+    }
+
+    .home_section .home_container .result div .mp4_download_links{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0.4rem 0;
+        margin: 0 0;
+    }
+    .home_section .home_container .result .thumbnail_holder .duration{
+        font-size: 15px;
+        text-align: center;
+    }
+    .about_section{
+        padding: 3rem 2rem;
+    }
+
+    .about_section .about_container p{
+        width: 80%;
+    }
+
+    .about_section .about_container .image_container{
+        width: 80%;    
+    }
+
+    .thanks_notice .thanks_holder{
+        max-width: 80%;
+    }
+
+    
+}
+
+@media(max-width:500px){
+    
+    header{
+        padding:1rem 1rem ;
+    }
+    
+    nav{
+        width: 100% !important;
+    }
+
+    .nav_active{
+        left: 45%;
+    }
+
+    .home_section .home_container{
+        width: 100%;
+        padding: 0 0;
+    }
+    
+    .home_section .home_container form{
+        margin: 2rem 0 !important; 
+        width: 90%;
+    }
+
+    .error{
+        font-size:17px !important;
+        line-height: 2.5rem;
+    }
+
+    .home_section{
+        padding: 1rem 0;
+    }
+
+    .home_section .home_container{
+        width: 100%;
+    }
+
+    .home_section .home_container form input{
+        font-size: 13px;
+    }
+    
+    .home_section .home_container form button{
+        font-size: 12px !important;
+        width: 20%;
+    }
+    
+    .about_section{
+        padding: 2rem 0;
+    }
+    
+    .about_section .about_container .image_container{
+        max-width: 100%;
+        width: 90% ;
+    }
+        
+    .thank_soical{
+        width: 70% !important;
+    }
+    .steps .step_container{
+        max-width: 90%; 
+        width: 90%;
+    }
+
+    .steps .step_lists{
+        flex-flow: column;
+        padding: 0;
+        display: flex;
+        width: 90%;
+        align-items: start;
+    }
+    
+    footer{
+        flex-flow: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .link_unavailable div span{
+        width: 100%;
+        text-align: center;
+        font-size:15.5px !important;
+    }
+
+}

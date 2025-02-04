@@ -1,0 +1,14 @@
+.home_section_theme{
+    padding: 2rem 0;
+    max-height: 100%;
+    padding-top: 6.5rem;
+    background:#16141c!important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden !important;
+    justify-content: center;
+    flex-flow: column;
+}
