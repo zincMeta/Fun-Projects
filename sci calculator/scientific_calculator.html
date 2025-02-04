@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="gradient">
+    <div class="container">
+
+        <div class="display">
+            <input type="text" placeholder="Scientific Calculator" name="play">
+        </div>
+        <div class="btn_holder">
+            <div class="btn_numbers" >
+                <button type="button" id="btn_zero" onclick="document.querySelector('input').value += document.querySelector('#btn_zero').innerHTML">0</button>
+                <button type="button" id="btn_one"  onclick="document.querySelector('input').value += document.querySelector('#btn_one').innerHTML">1</button>
+                <button type="button" id="btn_two"  onclick="document.querySelector('input').value += document.querySelector('#btn_two').innerHTML">2</button>
+                <button type="button" id="btn_three"  onclick="document.querySelector('input').value += document.querySelector('#btn_three').innerHTML">3</button>
+                <button type="button" id="btn_four"  onclick="document.querySelector('input').value += document.querySelector('#btn_four').innerHTML">4</button>
+                <button type="button" id="btn_five"  onclick="document.querySelector('input').value += document.querySelector('#btn_five').innerHTML">5</button>
+                <button type="button" id="btn_six"  onclick="document.querySelector('input').value += document.querySelector('#btn_six').innerHTML">6</button>
+                <button type="button" id="btn_seven"  onclick="document.querySelector('input').value += document.querySelector('#btn_seven').innerHTML">7</button>
+                <button type="button" id="btn_eight"  onclick="document.querySelector('input').value += document.querySelector('#btn_eight').innerHTML">8</button>
+                <button type="button" id="btn_nine"  onclick="document.querySelector('input').value += document.querySelector('#btn_nine').innerHTML">9</button>   
+            
+                <button type="button" id="btn_add"  onclick="document.querySelector('input').value += document.querySelector('#btn_add').innerHTML">+</button>
+                <button type="button" id="btn_sub"  onclick="document.querySelector('input').value += document.querySelector('#btn_sub').innerHTML">-</button>
+                <button type="button" id="btn_div"  onclick="document.querySelector('input').value += document.querySelector('#btn_div').innerHTML">/</button>
+                <button type="button" id="btn_mul"  onclick="document.querySelector('input').value += document.querySelector('#btn_mul').innerHTML">*</button>
+               
+                <button type="button" onclick="
+                
+                        let logarithm = document.querySelector('input');
+                        let logx = Math.log(logarithm.value);
+                        logarithm.value = eval(logx);
+                
+                ">log</button>
+                
+                <button type="button" onclick="
+                
+                        let reciprocal = document.querySelector('input');
+                        let rec = 1/eval(reciprocal.value);
+                        reciprocal.value = eval(rec);
+                
+                ">rec</button>
+
+                <button type="button" onclick="
+                
+                        let logarithm10 = document.querySelector('input');
+                        let log10 = Math.log10(logarithm10.value);
+                        logarithm10.value = eval(log10);
+                
+                ">log10</button>
+                
+                <button type="button" onclick="
+                
+                        let logarithm2 = document.querySelector('input');
+                        let log2 = Math.log2(logarithm2.value);
+                        logarithm2.value = eval(log2);
+                
+                ">log2</button>
+
+                <button onclick="
+                    
+                        let sine = document.querySelector('input');
+                        let sin = Math.sin(sine.value);
+                        sine.value = eval(sin);
+
+                ">sin</button>
+                
+                <button onclick="
+                                    
+                        let cosin = document.querySelector('input');
+                        let cos = Math.cos(cosin.value);
+                        cosin.value = eval(cos);
+
+                ">cos</button>
+                
+                <button onclick="
+                                    
+                        let Round = document.querySelector('input');
+                        let roun = Math.round(Round.value);
+                        Round.value = eval(roun);
+
+                ">ro</button>
+                
+                <button onclick="
+                                    
+                        let tangent = document.querySelector('input');
+                        let tan = Math.cos(tangent.value);
+                        tangent.value = eval(tan);
+
+                ">tan</button>
+
+                <button id="btn_point"  onclick="
+                                            
+                        let Pai = document.querySelector('input');
+                        let p = Math.PI;
+                        Pai.value += eval(p);
+
+                ">PI</button>
+
+                <button type="button" class="btn_point" onclick="document.querySelector('input').value += document.querySelector('.btn_point').innerHTML">.</button>
+
+                <button type="button" id="btn_Del" onclick="
+
+                        let btnD = document.querySelector('input');
+                        btnD.value = btnD.value.slice(0,-1)
+
+                ">DEL</button>
+
+                <button type="button" id="btn_Ac" onclick="
+                
+                        document.querySelector('input').value='';   
+                
+                ">AC</button>
+
+                <button type="button" id="btn_eq" onclick="
+
+                        let equal = document.querySelector('input');
+                        let eq = equal.value
+                        equal.value = eval(eq);
+                        
+                ">=</button>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
