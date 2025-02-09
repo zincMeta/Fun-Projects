@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #4f4f4f !important;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align:center;
+    color:#5938ae; 
+    font-family:sans-serif;
+}
+.header{
+    background-color:#222;
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media(max-width:1600px) {
+ 
+    img{
+        width: 100%;
+    }
+    
+    
+.header{
+    width: 100%;
+}
+
+}
