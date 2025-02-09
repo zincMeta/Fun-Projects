@@ -1,0 +1,11 @@
+.container{
+    padding: 80px;
+}
+
+.container #new{
+    margin-bottom: 10px;
+}
+
+.container .btn{
+    padding: 10px;
+}
