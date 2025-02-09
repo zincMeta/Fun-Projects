@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    flex-direction: column;
+    background-color: #eaeaea;
+}
+h2{
+    font-size: 35px;
+    padding: 20xp;
+    margin: 2rem auto;
+}
+form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+ padding: 12px 20px;
+}
+form #file{
+    padding: 12px 20px;
+    background-color: #222;
+    color: #fff;
+}
+form button{
+    padding: 12px 20px;
+    background-color: #c22121;
+    color: #fff;
+    margin: 3rem auto;
+    border: none;
+    font-size: 20px;
+}
