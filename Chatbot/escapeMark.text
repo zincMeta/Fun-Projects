@@ -1,0 +1,26 @@
+function escapeHtml(unsafe) {
+    return unsafe.replace(/[&<>"']/g, function (char) {
+        switch (char) {
+            case '&': return '&amp;';
+            case '<': return '&lt;';
+            case '>': return '&gt;';
+            case '"': return '&quot;';
+            case "'": return '&#039;';
+            default: return char;
+        }
+    });
+}
+
+xhr.addEventListener('readystatechange', function () {
+    if (this.readyState === this.DONE) {
+        
+        loading.style.display ="none";
+        msg.style.display ="flex";
+        user.style.display ="flex"; 
+        
+        msg_res = JSON.parse(this.responseText);
+        
+        // Escape special characters before inserting
+        msg_response.innerHTML = escapeHtml(msg_res.result);
+    }
+});
